@@ -1,0 +1,67 @@
+<!-- saved from url=(0014)about:internet --> 
+<!-- The above line is to eliminate ACTIVEX warnings in IE8 when running locally -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+</style>
+</head>
+<body>
+	<table cellpadding="4" cellspacing="2" width="100%" border="0" style="border-spacing:0">
+	<tbody>
+		<tr>
+			<td style="color:#FFFFFF; background-color:#9F2A20;" colspan="2">
+				<b>UNIVERSAL SNAP PROTOCOL CHECKLIST</b> <br>
+				Test run : 
+				<span id="test_select_section" title="hover hover hover"></span>
+				&nbsp&nbsp&nbsp&nbsp Protocol used : 
+				<span id="analyser_select_section">
+					<select id='analyser_select_menu' onchange='update_hidden_elements()'>
+						<option value=0>Standalone Rapid Assay</option>
+						<option value=1>Rapid Assay SSDX</option>
+						<option value=2>Snap Pro</option>
+						<option value=3>Quant SSDX</option>
+						<option value=4>Vet Test Snap Reader</option>
+						<option value=5>SNAP Foal IGG</option>
+					</select></span>
+				<span id="converter_section"></span>
+			</td>
+		</tr>
+		<tr>
+			<td style="color:#000000; background-color:#FFFFFF; font-size: 12px;">
+				<br>
+				<span id="section_one"></span>
+			</td>
+			<td valign="top">
+				<span id="section_two"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="outputfunction()"> Generate Notes </button>
+				<!--<input type="checkbox" id="skip_correct_checkbox">Show only incorrect</input>-->
+				<br>
+				<p id="section_three"></p>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+	
+
+	<script src="SNAP_QUEST_LIB5.js"></script>
+	<script src="SNAP_EXPLAIN_LIB5.js"></script>
+	<script src="SNAP_TEST_LIB5.js"></script>
+	<script src="GUI_Generation_Script.js"></script>
+</body>
+</html>
+
+<script language="javascript">
+    /* IE11 Fix for SP2010 */
+    if (typeof(UserAgentInfo) != 'undefined' && !window.addEventListener) 
+    {
+        UserAgentInfo.strBrowser=1; 
+    } 
+</script>
